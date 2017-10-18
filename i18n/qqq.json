@@ -1,0 +1,7 @@
+{
+	"@metadata": {
+		"authors": [ "Mustafa Sahin" ]
+	},
+	"skinname-sahin": "{{optional}}",
+	"sahin-desc": "{{desc|what=skin|name=Sahin|url=https://www.mediawiki.org/wiki/Skin:Example}}"
+}

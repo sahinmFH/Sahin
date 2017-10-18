@@ -1,0 +1,56 @@
+{
+	"name": "Sahin",
+	"version": "1.0",
+	"author": "Mustafa Sahin",
+	"url": "",
+	"descriptionmsg": "sahin-desc",
+	"namemsg": "skinname-sahin",
+	"license-name": "GPL-2.0+",
+	"type": "skin",
+	"ValidSkinNames": {
+		"sahin": "Sahin"
+	},
+	"MessagesDirs": {
+		"Sahin": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.sahin": {
+			"class": "ResourceLoaderSkinModule",
+			"position": "top",
+			"styles": {
+				"resources/libraries/normalise.css": {
+					"media": "screen"
+				},
+				"resources/screen-common.less": {
+					"media": "screen"
+				},
+				"resources/screen-desktop.less": {
+					"media": "screen and (min-width: 751px)"
+				},
+				"resources/screen-mobile.less": {
+					"media": "screen and (max-width: 750px)"
+				},
+				"resources/print.css": {
+					"media": "print"
+				}
+			}
+		},
+		"skins.sahin.js": {
+			"position": "bottom",
+			"scripts": [
+				"resources/main.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "sahin"
+	},
+	"AutoloadClasses": {
+		"SkinSahin": "Sahin.skin.php",
+		"SahinTemplate": "SahinTemplate.php"
+	},
+	"manifest_version": 1
+}

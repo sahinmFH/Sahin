@@ -1,0 +1,118 @@
+/* Common styling for the Example skin */
+
+@import "variables.less";
+
+// Page layout
+
+#mw-wrapper {
+	max-width: auto;
+	margin: 0 auto;
+	position: relative; 
+	padding: 1em;
+	background-color: #E0FFFF;
+}
+#p-logo {
+	
+
+	// Make logo image visible
+	// The class sets the background image from $wgLogo, but we still need to give it a size in order to show up
+	a.mw-wiki-logo {
+		display: block;
+		content: '';
+		width: 10em;
+		height: 10em;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+
+}
+
+
+.mw-body-content{
+
+	 float: left;
+ 	 width: auto;
+ 	 margin-left: 25px;
+  	margin-bottom: 10px;	
+	background-color: #E0FFFF;
+
+}
+
+// Some content stuff
+.firstHeading {
+	background-color: #E0FFFF;
+}
+
+.mw-indicators {
+	float: right;
+	margin: 1.5em 0 0 1em;
+	background-color: #E0FFFF;
+}
+
+pre {
+	overflow: auto;
+	white-space: pre-wrap;
+}
+
+.center,
+.center * {
+	margin: auto;
+	text-align: center;
+}
+
+// Splatter the menus and tools at the bottom
+#mw-footer,
+#page-tools,
+#p-personal {
+	margin: 1em 0;
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+	}
+	li {
+		padding-right: 1em;
+		display: inline-block;
+	}
+
+	background-color: #E0FFFF;
+}
+#page-tools .mw-portlet {
+	display: inline-block;
+}
+#mw-navigation {
+
+	float: left;
+  	width: 165;
+  	margin-right: 10px;
+  	margin-bottom: 10px;	background-color: #E0FFFF;
+}
+
+// Footer
+#mw-footer {
+	clear: both;
+	border-top: 1px solid @border;
+
+	ul {
+		margin-top: 1em;
+	}
+}
+#footer-icons {
+	float: right;
+	margin: 0 0 1em 1em;
+}
+
+#p-search  {
+
+	float: right;
+  	width: auto;
+  	margin-right: 10px;
+  	margin-bottom: 10px;
+
+}
+
+// hidden stuff
+#page-tools h3,
+#p-personal h3 {
+	.hidden;
+}
